@@ -1,0 +1,35 @@
+{
+  "categories": [
+    {
+      "name": "blankLines",
+      "pattern": "^\\s*$",
+      "type": "non-code"
+    },
+    {
+      "name": "singleLineComment",
+      "pattern": "^\\s*//",
+      "type": "non-code"
+    },
+    {
+      "name": "multiLineComment",
+      "startPattern": "^\\s*/\\*",
+      "endPattern": "\\*/\\s*$",
+      "type": "non-code"
+    },
+    {
+      "name": "importLines",
+      "pattern": "^(\\s*import|#include)\\b",
+      "type": "code"
+    },
+    {
+      "name": "variableLines",
+      "pattern": "^(\\s*let|const|var|int|float|String|boolean)\\b",
+      "type": "code"
+    },
+    {
+      "name": "functionLines",
+      "pattern": "^(\\s*(public|private|protected|static)?\\s*(function|class|def)\\b)",
+      "type": "code"
+    }
+  ]
+}
