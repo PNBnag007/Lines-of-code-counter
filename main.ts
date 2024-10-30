@@ -3,9 +3,9 @@ import * as path from "path";
 const { parse } = require('jsonc-parser');
 
 // Load configuration from JSON file
-const configPath: string = "Lines-of-code-counter\\config.jsonc";
-const inputPath: string = "Lines-of-code-counter\\test_cases\\test.java"; // Replace with your file path
-// const inputPath: string = "Lines-of-code-counter\\test_cases\\test_dir"; // Replace with your file path
+const configPath: string = "config.jsonc";
+// const inputPath: string = "test_cases\\test.java"; // Replace with your file path
+const inputPath: string = "test_cases\\test_dir"; // Replace with your file path
 const config: { categories: Array<{ name: string; pattern?: string; startPattern?: string; endPattern?: string, type: string; }> } = parse(fs.readFileSync(configPath, "utf-8"));
 
 // Define the structure for category patterns
