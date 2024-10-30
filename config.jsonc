@@ -15,7 +15,8 @@
       "startPattern": "^\\s*/\\*",
       "endPattern": "\\*/\\s*$",
       "type": "non-code"
-    },
+    }
+    ,
     {
       "name": "importLines",
       "pattern": "^(\\s*import|#include)\\b",
